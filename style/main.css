@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+hr {
+    height: 4px;
+    background-color: black;
+    width: 100%;
+}
+
+.links {
+    text-align: right;
+}
+
+h1 {
+    font-family: 'JosefinBold', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+a:hover {
+    color: blue;
+    transition: 0.3s linear;
+}
+
+.a_1, .a_2 {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'JosefinRegular', sans-serif;
+    font-weight: 500;
+    color: grey;
+}
+
+.a_1 {
+    position: relative;
+    right: 150px;
+}
+
+.a_2 {
+    position: relative;
+    right: 75px;
+}
