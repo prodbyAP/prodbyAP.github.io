@@ -1,10 +1,10 @@
 /* Для заголовков первого уровня */
 @font-face {
   font-family: "JosefinBold";
-  src: url("/fonts/Josefin_Sans/JosefinBold/JosefinSans-Bold.eot");
-  src: url("/fonts/Josefin_Sans/JosefinBold/JosefinSans-Bold.eot?#iefix") format("embedded-opentype"),
-       url("/fonts/Josefin_Sans/JosefinBold/JosefinSans-Bold.woff") format("woff"),
-       url("/fonts/Josefin_Sans/JosefinBold/JosefinSans-Bold.ttf") format("truetype");
+  src: url("Josefin_Sans/JosefinBold/JosefinSans-Bold.eot");
+  src: url("Josefin_Sans/JosefinBold/JosefinSans-Bold.eot?#iefix") format("embedded-opentype"),
+       url("Josefin_Sans/JosefinBold/JosefinSans-Bold.woff") format("woff"),
+       url("Josefin_Sans/JosefinBold/JosefinSans-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -12,10 +12,10 @@
 /* Для заголовков второго уровня */
 @font-face {
   font-family: "JosefinRegular";
-  src: url("/fonts/Josefin_Sans/JosefinRegular/JosefinSans-Regular.eot");
-  src: url("/fonts/Josefin_Sans/JosefinRegular/JosefinSans-Regular.eot?#iefix") format("embedded-opentype"),
-       url("/fonts/Josefin_Sans/JosefinRegular/JosefinSans-Regular.woff") format("woff"),
-       url("/fonts/Josefin_Sans/JosefinRegular/JosefinSans-Regular.ttf") format("truetype");
+  src: url("Josefin_Sans/JosefinRegular/JosefinSans-Regular.eot");
+  src: url("Josefin_Sans/JosefinRegular/JosefinSans-Regular.eot?#iefix") format("embedded-opentype"),
+       url("Josefin_Sans/JosefinRegular/JosefinSans-Regular.woff") format("woff"),
+       url("Josefin_Sans/JosefinRegular/JosefinSans-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }

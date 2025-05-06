@@ -4,34 +4,36 @@
     box-sizing: border-box;
 }
 
-header {
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-hr {
-    height: 4px;
-    background-color: black;
-    width: 100%;
+.main-container {
+    position: relative;
+    height: 100vh;
 }
 
 .links {
     text-align: right;
 }
 
-h1 {
-    font-family: 'JosefinBold', sans-serif;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-left: 60px;
+.CUBIC {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'JosefinRegular', sans-serif;
 }
 
-a:hover {
-    color: blue;
-    transition: 0.3s linear;
+.second-hr {
+    margin-top: 60vh;
 }
 
-.a_1, .a_2 {
+.updates {
+    position: absolute;
+    text-align: left;
+    top: 75vh;
+    font-family: 'JosefinRegular', sans-serif;
+}
+
+.a_1, .a_2, .a_3 {
     text-decoration: none;
     font-size: 25px;
     font-family: 'JosefinRegular', sans-serif;
@@ -47,4 +49,175 @@ a:hover {
 .a_2 {
     position: relative;
     right: 75px;
+}
+
+.a_3 {
+    position: relative;
+    left: 30vh;
+    font-size: 4vh;
+}
+
+.image-container-one {
+    display: flex; /* Используем Flexbox для выравнивания изображений в строку */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    margin-top: 20px; /* Отступ сверху */
+    margin-left: 30vh;
+}
+
+.image-container-two {
+    display: flex; /* Используем Flexbox для выравнивания изображений в строку */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    margin-top: 200px; /* Отступ сверху */
+    margin-left: 30vh;
+}
+
+.update-image {
+    width: 30vh; /* Ширина изображений (можно настроить) */
+    margin-right: 7vh; /* Отступ между изображениями */
+    border-radius: 10px;
+}
+
+.update-image:last-child {
+    margin-right: 0; /* Убираем отступ у последнего изображения */
+}
+
+.p-update1, .p-update2, .p-update3 {
+    position: absolute;
+    margin-top: 3vh;
+    font-size: 3vh;
+}
+
+.p-update4, .p-update5, .p-update6 {
+    position: absolute;
+    margin-top: 7vh;
+    font-size: 2vh;
+}
+
+.p-update1 {
+    margin-left: 30vh;
+}
+
+.p-update2 {
+    margin-left: 67vh;
+}
+
+.p-update3 {
+    margin-left: 104vh;
+}
+
+.p-update4 {
+    margin-left: 30vh;
+}
+
+.p-update4-1 {
+    margin-left: 30vh;
+    position: absolute;
+    margin-top: 10vh;
+    font-size: 2vh;
+}
+
+.p-update5 {
+    margin-left: 67vh;
+}
+
+.p-update5-1 {
+    margin-left: 67vh;
+    position: absolute;
+    margin-top: 9.5vh;
+    font-size: 2vh;
+}
+
+.p-update6 {
+    margin-left: 104vh;
+}
+
+.border-zone1 {
+    margin-top: 120vh;
+    margin-left: 30vh;
+    font-family: 'JosefinBold', sans-serif;
+    font-size: 5vh;
+    width: 140vh; 
+    height: 30vh; 
+    border-radius: 10px; 
+    background-color: grey; 
+    position: relative;
+}
+
+.border-text1 {
+    position: absolute; 
+    top: 20%; left: 15%; 
+    transform: translate(-50%, -50%);
+}
+
+.border-zone2 {
+    margin-top: 7vh;
+    margin-left: 30vh;
+    font-family: 'JosefinBold', sans-serif;
+    font-size: 5vh;
+    width: 140vh; 
+    height: 60vh; 
+    border-radius: 10px; 
+    background-color: grey; 
+    position: relative;
+}
+
+.border-text2 {
+    position: absolute; 
+    top: 20%; 
+    left: 15%; 
+    transform: translate(-50%, -50%);
+}
+
+.table-footer1 {
+    margin-top: 200vh;
+    font-family: 'JosefinBold', sans-serif;
+    font-size: 5vh;
+    width: 100%; 
+    height: 50vh; 
+    background-color: rgb(41, 41, 41); 
+    position: relative;
+}
+
+.table-footer2 {
+    color: white;
+    position: absolute;
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+
+body {
+    background-color: #FDFCFFFF;
+}
+
+header {
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+hr {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+h1 {
+    font-family: 'JosefinBold', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 30vh;
+}
+
+h3 {
+    font-family: 'JosefinBold', sans-serif;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 30vh;
+    font-size: 4vh;
+}
+
+a:hover {
+    color: blue;
+    transition: 0.3s linear;
 }
