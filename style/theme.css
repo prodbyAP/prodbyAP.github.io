@@ -1,0 +1,53 @@
+[data-theme='light'] {
+  background-color: rgb(242, 247, 255);
+  color: black;
+  hr {
+    background-color: black;
+  }
+  a:hover {
+    color: dodgerblue;
+    transition: 0.3s linear;
+  }
+  .a_1, .a_2, .a_3 {
+    color: grey;
+  }
+  .update-image, .border-zone1, .border-zone2 {
+    border-color: black;
+  }
+  .p-slogan {
+    color:dodgerblue;
+  }
+  .p-update1-1, .p-update1-2, .p-update2-1, .p-update2-2, .p-update3-1, .p-update4-1{
+    color:dodgerblue;
+  }
+  #theme-toggle {
+    background-color: rgb(242, 247, 255);
+  }
+}
+
+[data-theme='dark'] {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  hr {
+    background-color: white;
+  }
+  a:hover {
+    color: rgb(245, 194, 100);
+    transition: 0.3s linear;
+  }
+  .a_1, .a_2, .a_3 {
+    color: rgb(125, 207, 125);
+  }
+  .update-image, .border-zone1, .border-zone2 {
+    border-color: rgb(245, 194, 100);
+  }
+  .p-slogan{
+    color: rgb(245, 194, 100);
+  }
+  .p-update1-1, .p-update1-2, .p-update2-1, .p-update2-2, .p-update3-1, .p-update4-1{
+    color:rgb(245, 194, 100);
+  }
+  #theme-toggle {
+    background-color: rgb(27, 27, 27);
+  }
+}
