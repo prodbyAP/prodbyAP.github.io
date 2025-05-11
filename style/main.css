@@ -38,7 +38,6 @@
     font-size: 25px;
     font-family: 'JosefinRegular', sans-serif;
     font-weight: 500;
-    color: grey;
 }
 
 .a_1 {
@@ -48,7 +47,7 @@
 
 .a_2 {
     position: relative;
-    right: 75px;
+    right: 115px;
 }
 
 .a_3 {
@@ -57,40 +56,45 @@
     font-size: 4vh;
 }
 
+#theme-toggle {
+    position: relative;
+    right: 75px;
+    bottom: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
 .image-container-one {
-    display: flex; /* Используем Flexbox для выравнивания изображений в строку */
-    justify-content: flex-start; /* Выравнивание по левому краю */
-    margin-top: 20px; /* Отступ сверху */
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
     margin-left: 30vh;
 }
 
 .image-container-two {
-    display: flex; /* Используем Flexbox для выравнивания изображений в строку */
-    justify-content: flex-start; /* Выравнивание по левому краю */
-    margin-top: 200px; /* Отступ сверху */
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 200px; 
     margin-left: 30vh;
 }
 
 .update-image {
-    width: 30vh; /* Ширина изображений (можно настроить) */
-    margin-right: 7vh; /* Отступ между изображениями */
+    width: 30vh;
+    margin-right: 7vh;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 0.5vh;
 }
 
 .update-image:last-child {
-    margin-right: 0; /* Убираем отступ у последнего изображения */
+    margin-right: 0;
 }
 
-.p-update1, .p-update2, .p-update3 {
+.p-update1, .p-update2, .p-update3, .p-update4 {
     position: absolute;
     margin-top: 3vh;
     font-size: 3vh;
-}
-
-.p-update4, .p-update5, .p-update6 {
-    position: absolute;
-    margin-top: 7vh;
-    font-size: 2vh;
 }
 
 .p-update1 {
@@ -106,29 +110,49 @@
 }
 
 .p-update4 {
+    margin-left: 141vh;
+}
+
+.p-update1-1 {
     margin-left: 30vh;
+    position: absolute;
+    margin-top: 8vh;
+    font-size: 2vh;
+}
+
+.p-update1-2 {
+    margin-left: 30vh;
+    position: absolute;
+    margin-top: 11vh;
+    font-size: 2vh;
+}
+
+.p-update2-1 {
+    margin-left: 67vh;
+    position: absolute;
+    margin-top: 8vh;
+    font-size: 2vh;
+}
+
+.p-update2-2 {
+    margin-left: 67vh;
+    position: absolute;
+    margin-top: 11vh;
+    font-size: 2vh;
+}
+
+.p-update3-1 {
+    margin-left: 104vh;
+    position: absolute;
+    margin-top: 8vh;
+    font-size: 2vh;
 }
 
 .p-update4-1 {
-    margin-left: 30vh;
+    margin-left: 141vh;
     position: absolute;
-    margin-top: 10vh;
+    margin-top: 8vh;
     font-size: 2vh;
-}
-
-.p-update5 {
-    margin-left: 67vh;
-}
-
-.p-update5-1 {
-    margin-left: 67vh;
-    position: absolute;
-    margin-top: 9.5vh;
-    font-size: 2vh;
-}
-
-.p-update6 {
-    margin-left: 104vh;
 }
 
 .border-zone1 {
@@ -139,6 +163,8 @@
     width: 140vh; 
     height: 30vh; 
     border-radius: 10px; 
+    border-style: solid;
+    border-width: 0.5vh;
     background-color: grey; 
     position: relative;
 }
@@ -157,7 +183,9 @@
     width: 140vh; 
     height: 60vh; 
     border-radius: 10px; 
-    background-color: grey; 
+    background-color: grey;
+    border-style: solid;
+    border-width: 0.5vh; 
     position: relative;
 }
 
@@ -185,10 +213,6 @@
     margin-left: 5vh;
 }
 
-body {
-    background-color: #FDFCFFFF;
-}
-
 header {
     overflow-x: hidden;
     padding-top: 20px;
@@ -199,7 +223,6 @@ hr {
     margin-left: calc(-50vw + 50%);
     border: none;
     height: 2px;
-    background-color: black;
 }
 
 h1 {
@@ -215,9 +238,4 @@ h3 {
     margin-top: 20px;
     margin-left: 30vh;
     font-size: 4vh;
-}
-
-a:hover {
-    color: blue;
-    transition: 0.3s linear;
 }
