@@ -1,53 +1,132 @@
 [data-theme='light'] {
   background-color: rgb(242, 247, 255);
-  color: black;
-  hr {
-    background-color: black;
-  }
+  color: rgb(0, 0, 0);
+
   a:hover {
-    color: dodgerblue;
+    color: rgb(255, 123, 123);
     transition: 0.3s linear;
   }
-  .a_1, .a_2, .a_3 {
-    color: grey;
+
+  .nav-wrapper {
+    background-color: #1f9aff;
   }
-  .update-image, .border-zone1, .border-zone2 {
-    border-color: black;
+
+  .card-panel {
+    background-color: rgb(255, 123, 123);
   }
-  .p-slogan {
-    color:dodgerblue;
+
+  .image-frame {
+    background-color: rgb(255, 123, 123);
+    border: 5px solid #ff6060;
   }
-  .p-update1-1, .p-update1-2, .p-update2-1, .p-update2-2, .p-update3-1, .p-update4-1{
-    color:dodgerblue;
+
+  .image-gallery-container {
+    border: 6px solid #42a5f5;
+    background-color: #a7d7ff;
   }
+
+  #borderUpperImg {
+    border-color: rgb(255, 123, 123);
+  }
+
+  #latestUpdate {
+    background-color: #1f9aff;
+  }
+
+  #youNeed {
+    background-color: rgb(255, 123, 123);
+  }
+
+  #zoneNeed1 {
+    background-color: #1f9aff;
+  }
+
+  #zoneNeed2 {
+    background-color: rgb(214, 214, 214);
+  }
+
+  #zoneNeed3 {
+    background-color: rgb(173, 173, 173);
+  }
+
+  #page-footer {
+    background-color: rgb(255, 123, 123);
+  }
+
+  .footer-copyright {
+    background-color: rgb(255, 80, 80);
+  }
+
   #theme-toggle {
-    background-color: rgb(242, 247, 255);
+    background-color: rgb(255, 255, 255);
   }
+
 }
 
 [data-theme='dark'] {
-  background-color: rgb(27, 27, 27);
-  color: white;
-  hr {
-    background-color: white;
-  }
+  background-color: rgb(46, 46, 46);
+  color: rgb(242, 247, 255);
+
   a:hover {
-    color: rgb(245, 194, 100);
+    color: rgba(101, 255, 109, 0.664);
     transition: 0.3s linear;
   }
-  .a_1, .a_2, .a_3 {
-    color: rgb(125, 207, 125);
+
+  .nav-wrapper {
+    background-color: #a8a8a8;
   }
-  .update-image, .border-zone1, .border-zone2 {
-    border-color: rgb(245, 194, 100);
+
+  .card-panel {
+    background-color: rgba(101, 255, 109, 0.664);
   }
-  .p-slogan{
-    color: rgb(245, 194, 100);
+
+  .image-frame {
+    background-color: rgb(255, 234, 167);
+    border: 5px solid rgba(199, 154, 7, 0.822);
   }
-  .p-update1-1, .p-update1-2, .p-update2-1, .p-update2-2, .p-update3-1, .p-update4-1{
-    color:rgb(245, 194, 100);
+
+  .image-gallery-container {
+    border: 6px solid rgb(137, 255, 143);
+    background-color: rgba(101, 255, 109, 0.664);
   }
+
+  .slogan {
+    color: rgb(242, 247, 255);
+  }
+
+  #borderUpperImg {
+    border-color: rgba(199, 154, 7, 0.822);
+  }
+
+  #latestUpdate {
+    background-color: rgba(101, 255, 109, 0.664);
+  }
+
+  #youNeed {
+    background-color: rgb(255, 234, 167);
+  }
+
+  #zoneNeed1 {
+    background-color: rgba(101, 255, 109, 0.664);
+  }
+
+  #zoneNeed2 {
+    background-color: rgb(214, 214, 214);
+  }
+
+  #zoneNeed3 {
+    background-color: rgb(173, 173, 173);
+  }
+
+  #page-footer {
+    background-color: rgb(255, 211, 65);
+  }
+
+  .footer-copyright {
+    background-color: rgba(199, 154, 7, 0.822);
+  }
+
   #theme-toggle {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(255, 255, 255);
   }
 }

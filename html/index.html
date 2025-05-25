@@ -1,86 +1,236 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/main.css"> 
-    <link rel="stylesheet" href="../style/theme.css">
+    <title>CUBIC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../style/main.css">
     <link rel="stylesheet" href="../fonts/fonts.css">
-    <title>Project Web</title>
+    <link rel="stylesheet" href="../style/theme.css">
 </head>
-<body class="homepage has-header">
-    <div class="main-container">
-        <header>
-            <h1>This Logotype</h1> <!-- Здесь будет векторный логотип сайта-->
-            <ul>
-                <div class="links">
-                    <a class="a_1" href="../html/about.html">About us</a>
-                    <a class="a_2" href="../html/method_materials.html">Methodological materials</a>
-                    <button id="theme-toggle">
-                        <img src="../image/svg/icon.svg" alt="Иконка" width="50" height="40">
-                    </button>
+
+<body>
+    <div class="head">
+        <nav>
+            <div class="nav-wrapper">
+                <button id="theme-toggle" style="font-family: 'JosefinRegular', sans-serif;">Theme</button>
+                <a href="#" class="brand-logo" style="font-family: 'JosefinRegular', sans-serif;">CUBIC</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="../html/about.html"
+                            style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">About</a></li>
+                    <li><a href="../html/method_materials.html"
+                            style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Methodical Material</a>
+                    </li>
+                    <li><a href="../html/news.html"
+                            style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">News</a></li>
+                    <li><a href="#page-footer"
+                            style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Connection</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="../html/about.html">About</a></li>
+            <li><a href="../html/method_materials.html">Methodical Material</a></li>
+            <li><a href="../html/news.html">News</a></li>
+            <li><a href="https://materializecss.com/" target="_blank">Connection</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel" style="font-family: 'JosefinRegular', sans-serif; font-size: 2vh;">
+                    <span class="white-text"><i class="material-icons left">3d_rotation</i>This page contains basic
+                        information about the site.</span>
                 </div>
-                <hr> 
-            </ul>
-        </header>
-        <div class="CUBIC">
-            <h2>There will be an animated logo here</h2>
-            <p class="p-slogan">"from simple to complex"</p>
+            </div>
         </div>
-        <hr class="second-hr">
-        <section class="updates">
-            <h2>
-                <a class="a_3" href="">Latest updates</a>
-            </h2>
-            <div class="image-container-one">
-                <img src="../image/uppdate/Ref1.png" alt="Image 1" class="update-image">
-                <img src="../image/uppdate/Ref2.jpg" alt="Image 2" class="update-image">
-                <img src="../image/uppdate/Ref3.png" alt="Image 3" class="update-image">
-                <img src="../image/uppdate/Ref4.png" alt="Image 4" class="update-image">
+        <div class="row">
+            <div class="grid-example col s12" style="height: 70vh; font-size: 2vh; position: relative;">
+                <!-- Изображения по углам -->
+                <img src="../image/uppdate/Ref3.png" alt="Corner image" id="borderUpperImg"
+                    style="position: absolute; width: 200px; top: 20px; left: 20px; border-radius: 10px; border-style: solid; border-width: 4px">
+                <img src="../image/uppdate/Ref3.png" alt="Corner image" id="borderUpperImg"
+                    style="position: absolute; width: 200px; top: 20px; right: 20px; border-radius: 10px; border-style: solid; border-width: 4px">
+                <img src="../image/uppdate/Ref3.png" alt="Corner image" id="borderUpperImg"
+                    style="position: absolute; width: 200px; bottom: 20px; left: 20px; border-radius: 10px; border-style: solid; border-width: 4px">
+                <img src="../image/uppdate/Ref3.png" alt="Corner image" id="borderUpperImg"
+                    style="position: absolute; width: 200px; bottom: 20px; right: 20px; border-radius: 10px; border-style: solid; border-width: 4px">
+
+                <p class="slogan"
+                    style="text-align: center; position: absolute; width: 100%; font-size: 6vh; z-index: 10; top: 40%; transform: translateY(-50%); text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                    "From simple to complex"</p>
             </div>
-            <div class="update">
-                <p class="p-update1">First Update</p>
-                <p class="p-update2">Second Update</p>
-                <p class="p-update3">Third Update</p>
-                <p class="p-update4">Fourth Update</p>
-                <p class="p-update1-1">Try to do this. Prove yourself</p>
-                <p class="p-update1-2">as a specialist!</p>
-                <p class="p-update2-1">From now on, everything</p>
-                <p class="p-update2-2">has become easier</p>
-                <p class="p-update3-1">Wow how??!!</p>
-                <p class="p-update4-1">Server Update 4.4</p>
-            </div>
-            <div class="image-container-two">
-                <img src="../image/uppdate/Ref1.png" alt="Image 1" class="update-image">
-                <img src="../image/uppdate/Ref2.jpg" alt="Image 2" class="update-image">
-                <img src="../image/uppdate/Ref3.png" alt="Image 3" class="update-image">
-                <img src="../image/uppdate/Ref4.png" alt="Image 4" class="update-image">
-            </div>
-            <div class="update">
-                <p class="p-update1">Fifth Update</p>
-                <p class="p-update2">Sixth Update</p>
-                <p class="p-update3">Seventh Update</p>
-                <p class="p-update4">Eighth Update</p>
-                <p class="p-update1-1">Try to do this. Prove yourself</p>
-                <p class="p-update1-2">as a specialist!</p>
-                <p class="p-update2-1">From now on, everything</p>
-                <p class="p-update2-2">has become easier</p>
-                <p class="p-update3-1">Wow how??!!</p>
-                <p class="p-update4-1">Server Update 4.4</p>
-            </div>
-        </section>
-        <div class= "border-zone1">
-            <span class="border-text1">Referens Text</span>
         </div>
-        <div class="border-zone2">
-            <span class="border-text2">Referens Text</span>
+        <div class="row">
+            <div class="card-panel col s6" id="latestUpdate"
+                style="height: 9vh; font-size: 4vh; display: flex; justify-content: center; align-items: center;">
+                <a href="../html/update.html" style="color: aliceblue;">Latest Update</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="image-gallery-container">
+                <div class="row image-row">
+                    <div class="col s12 m6 l3 image-wrapper">
+                        <img src="../image/uppdate/Ref3.png" alt="Image 1" class="responsive-img">
+                    </div>
+                    <div class="col s12 m6 l3 image-wrapper">
+                        <img src="../image/uppdate/Ref3.png" alt="Image 2" class="responsive-img">
+                    </div>
+                    <div class="col s12 m6 l3 image-wrapper">
+                        <img src="../image/uppdate/Ref3.png" alt="Image 3" class="responsive-img">
+                    </div>
+                    <div class="col s12 m6 l3 image-wrapper">
+                        <img src="../image/uppdate/Ref3.png" alt="Image 4" class="responsive-img">
+                    </div>
+                </div>
+                <div class="row image-row">
+                    <div class="col s12 m6 l3 image-wrapper">
+                        <img src="../image/uppdate/Ref3.png" alt="Image 5" class="responsive-img">
+                    </div>
+                    <div class="col s12 m6 l3 image-wrapper">
+                        <img src="../image/uppdate/Ref3.png" alt="Image 6" class="responsive-img">
+                    </div>
+                    <div class="col s12 m6 l3 image-wrapper">
+                        <img src="../image/uppdate/Ref3.png" alt="Image 7" class="responsive-img">
+                    </div>
+                    <div class="col s12 m6 l3 image-wrapper">
+                        <img src="../image/uppdate/Ref3.png" alt="Image 8" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15vh;">
+            <div class="card-panel col s6 offset-s6" id="youNeed"
+                style="height: 9vh; font-size: 4vh; display: flex; justify-content: center; align-items: center;">
+                <p style="color: aliceblue;">Everything you need!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col s8">
+                        <div class="image-frame">
+                            <img src="../image/uppdate/Ref3.png" alt="Image 1" class="responsive-img materialboxed"
+                                data-caption="Описание изображения" style="border-radius: 10px; width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div id="zoneNeed2" style="height: 25vh; border: 2px #ccc; border-radius: 10px; padding: 10px;">
+                            <div style="height: 100%; display: flex; flex-direction: column;">
+                                <div id="zoneNeed1" style="padding: 5px; border-radius: 5px; margin-bottom: 10px;">
+                                    <p style="color: white; margin: 0; text-align: center; font-size: 4vh;">Absolutely
+                                        free</p>
+                                </div>
+                                <div
+                                    style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                    <div id="zoneNeed3" style="padding: 5px; border-radius: 3px; margin-bottom: 5px;">
+                                        <p style="margin: 0; font-size: 3vh;">Open access to 3D training materials for
+                                            beginners</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 15vh;">
+            <div class="col s12 m6 l4" style="margin-top: -5vh;"> <!-- Поднимаем блок на 5vh вверх -->
+                <div id="zoneNeed2" style="height: 25vh; border: 2px #ccc; border-radius: 10px; padding: 10px;">
+                    <div style="height: 100%; display: flex; flex-direction: column;">
+                        <div id="zoneNeed1" style="padding: 5px; border-radius: 5px; margin-bottom: 10px;">
+                            <p style="color: white; margin: 0; text-align: center; font-size: 4vh;">All at once</p>
+                        </div>
+                        <div
+                            style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div id="zoneNeed3" style="padding: 5px; border-radius: 3px; margin-bottom: 5px;">
+                                <p style="margin: 0; font-size: 3vh;">All important information in one place</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l8" style="padding-right: 0;">
+                <div class="image-frame" style="padding: 10px; display: inline-block; float: right;">
+                    <img src="../image/uppdate/Ref3.png" alt="Image 1" class="materialboxed"
+                        data-caption="Описание изображения"
+                        style="max-width: 40vh; display: block; border-radius: 10px;">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="row valign-wrapper"> <!-- Добавляем valign-wrapper для выравнивания по вертикали -->
+                    <div class="col s12 m6 l8">
+                        <div class="image-frame"
+                            style="width: 55vh; padding: 10px; border-radius: 10px; overflow: hidden; margin-left: auto;">
+                            <img src="../image/uppdate/Ref3.png" alt="Image 1" class="responsive-img materialboxed"
+                                data-caption="Описание изображения" style="width: 100%; border-radius: 8px;">
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div id="zoneNeed2" style="height: 25vh; border: 2px #ccc; border-radius: 10px; padding: 10px;">
+                            <div style="height: 100%; display: flex; flex-direction: column;">
+                                <div id="zoneNeed1" style="padding: 5px; border-radius: 5px; margin-bottom: 10px;">
+                                    <p style="color: white; margin: 0; text-align: center; font-size: 4vh;">No boredom!
+                                    </p>
+                                </div>
+                                <div
+                                    style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                                    <div id="zoneNeed3" style="padding: 5px; border-radius: 3px; margin-bottom: 5px;">
+                                        <p style="margin: 0; font-size: 3vh;">All the material is presented in an
+                                            interesting
+                                            way
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        <div class="table-footer1">
-            <span class="table-footer2">Social Links</span>
+    </div>
+    </div>
+    <footer class="page-footer" id="page-footer" style="font-family: 'JosefinRegular', sans-serif;">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">СUBIC</h5>
+                    <p class="grey-text text-lighten-4">Educational platform for the development of 3D modeling skills
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            M.Sidenav.init(document.querySelectorAll('.sidenav'));
+        });
+    </script>
     <script src="../script's/theme.js"></script>
 </body>
 
