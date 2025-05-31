@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.info-panel {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info-panel-second {
+  height: auto;
+  min-height: 60vh;
+  width: 75%;
+  font-size: 2vh;
+  font-family: 'JosefinRegular';
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(76, 91, 131);
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: scale(1.03);
+}
+
+.info-panel-second-mini {
+  height: auto;
+  min-height: 40vh;
+  width: 45%;
+  font-size: 2vh;
+  font-family: 'JosefinRegular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(101, 121, 175);
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.responsive-img {
+  border-radius: 10px;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+}
+
+.responsive-img:hover {
+  transform: scale(1.03);
+}
+
+.info-text {
+  color: aliceblue;
+  text-align: center;
+}
+
+.brand-logo {
+  font-family: 'JosefinRegular', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+}
+
+#theme-toggle {
+  margin-left: 10px;
+}
+
+.page-footer {
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .info-panel {
+    min-height: 50vh;
+    font-size: 1.8vh;
+  }
+  
+  .brand-logo {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .info-panel {
+    min-height: 40vh;
+    font-size: 1.5vh;
+    margin: 10px auto;
+    padding: 15px;
+  }
+  
+  .brand-logo {
+    font-size: 1.1rem;
+    max-width: 50%;
+  }
+  
+  #theme-toggle, .card-panel {
+    padding: 0 8px;
+    font-size: 2vh;
+    font-family: 'JosefinRegular', sans-serif;
+  }
+  
+  .page-footer .row {
+    margin-bottom: 0;
+  }
+  
+  .page-footer .col.s12 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

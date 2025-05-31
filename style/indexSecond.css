@@ -1,0 +1,78 @@
+/* Стили для адаптивного блока */
+.features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feature-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  flex: 1 1 300px;
+  min-width: 0;
+}
+
+.feature-content {
+  flex: 1 1 300px;
+  min-width: 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-header h4 {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.feature-text p {
+  color: #eee;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 992px) {
+
+  .feature-block,
+  .feature-block.reverse {
+      flex-direction: column;
+  }
+
+  .feature-image,
+  .feature-content {
+      width: 100%;
+      flex: 1 1 auto;
+  }
+
+  .feature-header h4 {
+      font-size: 1.8rem;
+  }
+
+  .feature-text p {
+      font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-header h4 {
+      font-size: 1.5rem;
+  }
+
+  .feature-text p {
+      font-size: 1rem;
+  }
+}

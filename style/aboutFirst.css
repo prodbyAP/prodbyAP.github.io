@@ -1,0 +1,14 @@
+#theme-toggle, .brand-logo, .card-panel {
+  font-family: 'JosefinRegular', sans-serif;
+  font-size: 2vh
+}
+
+#aboutCubic {
+  height: 35vh; 
+  width: 75vh; 
+  font-size: 4vh; 
+  font-family: 'JosefinRegular'; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
