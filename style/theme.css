@@ -1,64 +1,47 @@
 [data-theme='light'] {
-  background-color: rgb(242, 247, 255);
+  background-color: rgba(209, 234, 255, 0.671);
   color: rgb(0, 0, 0);
 
   a:hover {
-    color: rgb(255, 123, 123);
+    color: rgb(163, 255, 190);
     transition: 0.3s linear;
   }
 
-  .nav-wrapper {
-    background-color: #1f9aff;
+  .nav-wrapper, #latestUpdate {
+    background-color: #8eccff;
+    color: black;
   }
-
-  .card-panel {
-    background-color: rgb(255, 123, 123);
+  
+  .card-panel, #youNeed {
+    background-color: rgb(148, 171, 235);
+    color: white;
   }
-
-  .image-frame {
-    background-color: rgb(255, 123, 123);
-    border: 5px solid #ff6060;
-  }
-
+  
   .image-gallery-container {
-    border: 6px solid #42a5f5;
-    background-color: #a7d7ff;
+    border: 6px solid #307cb9;
+    background-color: #8eccff;
   }
 
-  #borderUpperImg {
-    border-color: rgb(255, 123, 123);
+  .feature-content {
+    background-color: #8eccff;
   }
-
-  #latestUpdate {
-    background-color: #1f9aff;
-  }
-
-  #youNeed {
-    background-color: rgb(255, 123, 123);
-  }
-
-  #zoneNeed1 {
-    background-color: #1f9aff;
-  }
-
-  #zoneNeed2 {
-    background-color: rgb(214, 214, 214);
-  }
-
-  #zoneNeed3 {
-    background-color: rgb(173, 173, 173);
-  }
-
+  
   #page-footer {
-    background-color: rgb(255, 123, 123);
+    background-color: rgb(253, 150, 90);
+    color: white;
   }
 
   .footer-copyright {
-    background-color: rgb(255, 80, 80);
+    background-color: rgb(189, 112, 67);
   }
 
   #theme-toggle {
     background-color: rgb(255, 255, 255);
+  }
+
+  .card {
+    background-color: #8378b3;
+    color: white;
   }
 
 }
@@ -77,56 +60,40 @@
   }
 
   .card-panel {
-    background-color: rgba(101, 255, 109, 0.664);
+    background-color: rgba(72, 77, 148, 0.664);
   }
-
-  .image-frame {
-    background-color: rgb(255, 234, 167);
-    border: 5px solid rgba(199, 154, 7, 0.822);
-  }
-
+  
   .image-gallery-container {
-    border: 6px solid rgb(137, 255, 143);
-    background-color: rgba(101, 255, 109, 0.664);
+    border: 6px solid rgba(72, 77, 148, 0.856);
+    background-color: #a8a8a8;
   }
 
   .slogan {
     color: rgb(242, 247, 255);
   }
 
-  #borderUpperImg {
-    border-color: rgba(199, 154, 7, 0.822);
-  }
-
   #latestUpdate {
-    background-color: rgba(101, 255, 109, 0.664);
+    background-color: rgba(72, 77, 148, 0.664);
   }
 
   #youNeed {
-    background-color: rgb(255, 234, 167);
+    background-color: rgba(72, 77, 148, 0.664);
   }
-
-  #zoneNeed1 {
-    background-color: rgba(101, 255, 109, 0.664);
-  }
-
-  #zoneNeed2 {
-    background-color: rgb(214, 214, 214);
-  }
-
-  #zoneNeed3 {
-    background-color: rgb(173, 173, 173);
-  }
-
+  
   #page-footer {
-    background-color: rgb(255, 211, 65);
+    background-color: rgba(61, 126, 112, 0.945);
   }
 
   .footer-copyright {
-    background-color: rgba(199, 154, 7, 0.822);
+    background-color: rgba(40, 99, 86, 0.945);
   }
 
   #theme-toggle {
     background-color: rgb(255, 255, 255);
+  }
+
+  .card {
+    background-color: rgba(39, 44, 116, 0.664);
+    color: white;
   }
 }

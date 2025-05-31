@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,32 +7,25 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/updateFirst.css">
   <link rel="stylesheet" href="../fonts/fonts.css">
   <link rel="stylesheet" href="../style/theme.css">
-
-  <style>
-    .equal-height-row {
-      display: flex;
-      align-items: stretch;
-    }
-  </style>
 </head>
 
 <body>
   <div class="head">
     <nav>
       <div class="nav-wrapper">
-        <button id="theme-toggle">Смена темы</button>
-        <a href="#" class="brand-logo" style="font-family: 'JosefinRegular', sans-serif;">CUBIC</a>
+        <button id="theme-toggle">Theme</button>
+        <a href="#" class="brand-logo">CUBIC</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="../html/index.html" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Main</a>
           </li>
+          <li><a href="../html/about.html" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">About</a>
+          </li>
           <li><a href="../html/method_materials.html"
               style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Methodical Material</a></li>
-          <li><a href="../html/news.html" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">News</a>
-          </li>
           <li><a href="#page-footer" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Connection</a>
           </li>
         </ul>
@@ -40,73 +33,63 @@
     </nav>
     <ul class="sidenav" id="mobile-demo">
       <li><a href="../html/index.html">Main</a></li>
+      <li><a href="../html/about.html">About</a></li>
       <li><a href="../html/method_materials.html">Methodical Material</a></li>
-      <li><a href="../html/news.html">News</a></li>
-      <li><a href="#page-footer" target="_blank">Connection</a></li>
+      <li><a href="#page-footer">Connection</a></li>
     </ul>
   </div>
   <div class="container">
     <div class="row">
-      <div class="card-panel col s4"
-        style="height: 35vh; width: 65vh; font-size: 4vh; font-family: 'JosefinRegular'; display: flex; justify-content: center; align-items: center; border-radius: 10px; border-style: solid; border-color: rgba(255, 235, 205, 0.61);">
-        <p style="color: aliceblue;">CUBIC - is an open educational platform for 3D modeling. We try
-          to attract as many people as possible in a new direction
-          and share our experience.</p>
+      <div class="card-panel col s4" id="firstBlock">
+        <p style="color: aliceblue" style="font-size: 3vh;">Added a new block in the modeling course: proportional editing</p>
       </div>
-      <div class="card-panel col s4"
-        style="height: 35vh; width: 65vh; font-size: 4vh; font-family: 'JosefinRegular'; display: flex; justify-content: center; align-items: center; border-radius: 10px; border-style: solid; border-color: rgba(255, 235, 205, 0.61);">
-        <p style="color: aliceblue;">CUBIC - is an open educational platform for 3D modeling. We try
-          to attract as many people as possible in a new direction
-          and share our experience.</p>
+      <div class="card-panel col s4" id="secondBlock">
+        <p style="color: aliceblue;" style="font-size: 3vh;">Improved polygon counting system: the grid type is taken into account</p>
       </div>
     </div>
     <div class="row">
-      <div class="card-panel col s4"
-        style="height: 35vh; width: 65vh; font-size: 4vh; font-family: 'JosefinRegular'; display: flex; justify-content: center; align-items: center; border-radius: 10px; border-style: solid; border-color: rgba(255, 235, 205, 0.61);">
-        <p style="color: aliceblue;">CUBIC - is an open educational platform for 3D modeling. We try
-          to attract as many people as possible in a new direction
-          and share our experience.</p>
+      <div class="card-panel col s4" id="thridBlock">
+        <p style="color: aliceblue;">Added a new course: animation using dice</p>
       </div>
-      <div class="card-panel col s4"
-        style="height: 35vh; width: 65vh; font-size: 4vh; font-family: 'JosefinRegular'; display: flex; justify-content: center; align-items: center; border-radius: 10px; border-style: solid; border-color: rgba(255, 235, 205, 0.61);">
-        <p style="color: aliceblue;">CUBIC - is an open educational platform for 3D modeling. We try
-          to attract as many people as possible in a new direction
-          and share our experience.</p>
+      <div class="card-panel col s4" id="fourthBlock">
+        <p style="color: aliceblue;">Fixed previous site errors</p>
       </div>
     </div>
   </div>
-  <footer class="page-footer" id="page-footer">
+  <footer class="page-footer" id="page-footer" style="font-family: 'JosefinRegular', sans-serif;">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">СUBIC</h5>
-          <p class="grey-text text-lighten-4">Educational platform for the development of 3D modeling skills
+          <h5>СUBIC</h5>
+          <p>Educational platform for the development of 3D modeling
+            skills
           </p>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+          <h5>Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <li>
+              <p>Link 1 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 2 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 3 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 4 (will be available later)</p>
+            </li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-        © 2025 Copyright Text
-        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-      </div>
+      <div class="container" style="color: white;">© 2025 Copyright Text</div>
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      M.Sidenav.init(document.querySelectorAll('.sidenav'));
-    });
-  </script>
+  <script src="../script's/sidenav.js"></script>
   <script src="../script's/theme.js"></script>
 </body>
 

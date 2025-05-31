@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CUBIC</title>
+  <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/materialFlex.css">
+  <link rel="stylesheet" href="../style/indexThree.css">
   <link rel="stylesheet" href="../fonts/fonts.css">
   <link rel="stylesheet" href="../style/theme.css">
 </head>
@@ -16,45 +17,99 @@
   <div class="head">
     <nav>
       <div class="nav-wrapper">
-        <button id="theme-toggle" style="font-family: 'JosefinRegular', sans-serif;">Theme</button>
-        <a href="#" class="brand-logo" style="font-family: 'JosefinRegular', sans-serif;">CUBIC</a>
+        <button id="theme-toggle">Theme</button>
+        <a href="#" class="brand-logo">CUBIC</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="../html/index.html" class="nav-link"
+              style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Main</a></li>
           <li><a href="../html/about.html" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">About</a>
           </li>
-          <li><a href="../html/index.html" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Main</a>
+          <li><a href="../html/news.html" class="nav-link"
+              style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">News</a></li>
+          <li><a href="#page-footer" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Connection</a>
           </li>
-          <li><a href="../html/news.html" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">News</a>
-          </li>
-          <li><a href="https://materializecss.com/" target="_blank"
-              style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Connection</a></li>
         </ul>
       </div>
     </nav>
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="../html/about.html">About</a></li>
-      <li><a href="../html/index.html">Main</a></li>
-      <li><a href="../html/news.html">News</a></li>
-      <li><a href="https://materializecss.com/" target="_blank">Connection</a></li>
+      <li><a href="../html/index.html" class="sidenav-close">Main</a></li>
+      <li><a href="../html/news.html" class="sidenav-close">News</a></li>
+      <li><a href="../html/about.html" class="sidenav-close">About</a></li>
+      <li><a href="#page-footer" class="sidenav-close">Connection</a></li>
     </ul>
   </div>
 
-  <div class="container">
+  <main class="container">
     <div class="row">
       <div class="col s12">
-        <div class="card-panel" style="font-family: 'JosefinRegular', sans-serif; font-size: 2vh">
-          <span class="white-text"><i class="material-icons left">book</i>This page contains free methodological
-            materials on 3D modeling.</span>
+        <div class="card-panel">
+          <span style="font-family: 'JosefinRegular', sans-serif; font-size: 2vh;"><i
+              class="material-icons left">3d_rotation</i>Choose the course you are interested in</span>
         </div>
       </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="card-panel info-panel-second">
+        <div class="col s12 m6 l3 image-wrapper">
+          <a href="../html/modelingCourse.html">
+            <img src="../image/uppdate/Referens_12.jpg" alt="Image 1" class="responsive-img">
+          </a>
+        </div>
+        <div class="card-panel info-panel-second-mini">
+          <p class="info-text" style="font-size: 4vh;">Modeling course</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card-panel info-panel-second">
+        <div class="col s12 m6 l3 image-wrapper">
+          <a href="../html/animationCourse.html">
+            <img src="../image/uppdate/Referens_15.jpg" alt="Image 1" class="responsive-img">
+          </a>
+        </div>
+        <div class="card-panel info-panel-second-mini">
+          <p class="info-text" style="font-size: 4vh;">Animation course</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer" id="page-footer" style="font-family: 'JosefinRegular', sans-serif;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>СUBIC</h5>
+          <p>Educational platform for the development of 3D modeling
+            skills
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5>Links</h5>
+          <ul>
+            <li>
+              <p>Link 1 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 2 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 3 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 4 (will be available later)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">© 2025 Copyright Text</div>
+    </div>
+  </footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      M.Sidenav.init(document.querySelectorAll('.sidenav'));
-    });
-  </script>
+  <script src="../script's/sidenav.js"></script>
   <script src="../script's/theme.js"></script>
 </body>
 

@@ -1,14 +1,171 @@
 #theme-toggle, .brand-logo, .card-panel {
   font-family: 'JosefinRegular', sans-serif;
-  font-size: 2vh
+  font-size: 2vh;
 }
 
 #aboutCubic {
-  height: 35vh; 
-  width: 75vh; 
-  font-size: 4vh; 
+  height: auto; 
+  min-height: 35vh;
+  width: 100%; 
+  font-size: 2.5vh; 
   font-family: 'JosefinRegular'; 
   display: flex; 
   justify-content: center; 
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  padding: 5px;
+}
+
+.image-wrapper img:hover {
+  transform: scale(1.03);
+}
+
+.image-wrapper img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+}
+
+.image-frame img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.input-field {
+  margin-bottom: 20px;
+}
+
+.card-panel {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 10vh;
+}
+
+.image-gallery-container {
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.slogan {
+  font-family: 'JosefinRegular', sans-serif;
+  font-size: 4vh;
+}
+
+p {
+  font-family: 'JosefinRegular', sans-serif;
+}
+
+@media (max-width: 992px) {
+  .feature-block,
+  .feature-block.reverse {
+    flex-direction: column;
+  }
+
+  .feature-image,
+  .feature-content {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .feature-header h4 {
+    font-size: 1.8rem;
+  }
+
+  .feature-text p {
+    font-size: 1.1rem;
+  }
+
+  #aboutCubic {
+    font-size: 2.2vh;
+    min-height: 25vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    font-size: 1.5rem;
+  }
+
+  #nav-mobile li a {
+    font-size: 2vh !important;
+  }
+
+  #aboutCubic {
+    font-size: 2vh;
+    min-height: 20vh;
+    padding: 15px;
+  }
+
+  .grid-example {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .feature-header h4 {
+    font-size: 1.5rem;
+  }
+
+  .feature-text p {
+    font-size: 1rem;
+  }
+
+  #aboutCubic {
+    font-size: 1.8vh;
+    min-height: 15vh;
+  }
+
+  .card-panel span {
+    font-size: 1.5vh;
+  }
+
+  .page-footer h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .brand-logo {
+    font-size: 1.2rem;
+    max-width: 40%;
+  }
+
+  #aboutCubic {
+    font-size: 1.6vh;
+    min-height: 12vh;
+  }
+
+  .grid-example {
+    height: 40vh;
+  }
+
+  .page-footer .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #3d-container {
+    height: 40vh !important;
+  }
 }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Модель со Sketchfab</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="../style/theme.css">
+</head>
+
+<body>
+  <div class="head">
+    <nav>
+      <div class="nav-wrapper">
+        <button id="theme-toggle">Theme</button>
+        <a href="#" class="brand-logo">CUBIC</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="../html/index.html" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Main</a>
+          </li>
+          <li><a href="../html/about.html" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">About</a>
+          </li>
+          <li><a href="../html/method_materials.html"
+              style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Methodical Material</a></li>
+          <li><a href="#page-footer" style="font-family: 'JosefinRegular', sans-serif; font-size: 2.5vh">Connection</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../html/index.html">Main</a></li>
+      <li><a href="../html/about.html">About</a></li>
+      <li><a href="../html/method_materials.html">Methodical Material</a></li>
+      <li><a href="#page-footer">Connection</a></li>
+    </ul>
+  </div>
+
+  <main class="container">
+    <div id="controls">
+      <button id="loadModel">Загрузить модель</button>
+      <select id="modelSelect">
+        <option value="446aa5a80fad4fb28a371bf701ba9930">Комната</option>
+        <option value="b99a085cefc9403c886a6d9d59a50231">Робот</option>
+        <option value="cefbf83a14574f149d5ec4f4dda2b475">Соник</option>
+      </select>
+    </div>
+    <iframe id="sketchfab-embed" style="border-radius: 20px;"></iframe>
+  </main>
+
+  <footer class="page-footer" id="page-footer" style="font-family: 'JosefinRegular', sans-serif;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>СUBIC</h5>
+          <p>Educational platform for the development of 3D modeling
+            skills
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5>Links</h5>
+          <ul>
+            <li>
+              <p>Link 1 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 2 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 3 (will be available later)</p>
+            </li>
+            <li>
+              <p>Link 4 (will be available later)</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container" style="color: white;">© 2025 Copyright Text</div>
+    </div>
+  </footer>
+  <script src="../script's/sketchfabLoad.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="../script's/sidenav.js"></script>
+  <script src="../script's/theme.js"></script>
+</body>
+
+</html>
